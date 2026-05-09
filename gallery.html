@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Scribbled by Anju</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf6f0;
+      --warm-white: #fdf9f4;
+      --gold: #b89a6a;
+      --gold-light: #d4b896;
+      --gold-dark: #8a7048;
+      --ink: #1a1510;
+      --ink-soft: #3a2f24;
+      --section-bg: #f5efe6;
+    }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      margin: 0;
+      min-height: 100vh;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem 4rem;
+      background: rgba(250, 246, 240, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(184,154,106,0.15);
+      transition: all 0.4s;
+    }
+    .nav-logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: var(--gold-dark);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-links { display: flex; gap: 2.4rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      transition: color 0.3s;
+    }
+    .nav-links a:hover, .nav-links .active {
+      color: var(--gold);
+    }
+    .gallery-header {
+      padding-top: 7rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .gallery-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    .gallery-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .gallery-desc {
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      padding: 0 4vw 4vw;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery-item {
+      background: var(--section-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(184,154,106,0.07);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+    .gallery-item:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 12px 32px rgba(184,154,106,0.13);
+    }
+    .gallery-img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      background: #eee;
+      transition: filter 0.3s;
+    }
+    .gallery-caption {
+      padding: 1.1rem 1.5rem 1.2rem;
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      font-family: 'Jost', sans-serif;
+      background: var(--section-bg);
+    }
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 2rem; }
+      .gallery-grid { gap: 1.2rem; padding: 0 1vw 3vw; }
+    }
+    @media (max-width: 600px) {
+      .gallery-header { padding-top: 5.5rem; }
+      .gallery-title { font-size: 2rem; }
+      nav { padding: 1rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Scribbled by Anju</a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#testimonials">Testimonials</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="gallery-header">
+  <span class="gallery-eyebrow">Portfolio</span>
+  <h1 class="gallery-title">Gallery</h1>
+  <div class="gallery-desc">A curated selection of calligraphy, engraving, and hand-painted works for weddings, brands, and private clients. Each piece is crafted with intention and artistry.</div>
+</div>
+<div class="gallery-grid">
+  <!-- Example images, replace src with your own images -->
+  <div class="gallery-item">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Calligraphy Envelope">
+    <div class="gallery-caption">Wedding Envelope Calligraphy</div>
+  </div>
+  <div class="gallery-item">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Engraved Perfume Bottle">
+    <div class="gallery-caption">Engraved Perfume Bottle for Dior</div>
+  </div>
+  <div class="gallery-item">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Hand-painted Gift Box">
+    <div class="gallery-caption">Hand-painted Gift Box</div>
+  </div>
+  <div class="gallery-item">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Live Event Calligraphy">
+    <div class="gallery-caption">Live Event Calligraphy</div>
+  </div>
+  <div class="gallery-item">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Personalised Place Cards">
+    <div class="gallery-caption">Personalised Place Cards</div>
+  </div>
+  <div class="gallery-item">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1455656678494-4d1dcd842ad8?auto=format&fit=crop&w=600&q=80" alt="Brand Activation Painting">
+    <div class="gallery-caption">Brand Activation Painting</div>
+  </div>
+</div>
+</body>
+</html>
