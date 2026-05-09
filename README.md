@@ -1,3 +1,0 @@
-# scribbledbyanju
-scribbledbyanju website
-
