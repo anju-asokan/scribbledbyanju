@@ -137,7 +137,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:500; margin:0; color:var(--ink
 .hero .eyebrow{ justify-content:center; margin-bottom:1.4rem; }
 .hero .eyebrow::before{ display:none; }
 .hero h1{
-  font-size:clamp(2.4rem, 6vw, 4.4rem); line-height:1.08; max-width:16ch; margin-inline:auto;
+  font-size:clamp(2.4rem, 6vw, 4.4rem); line-height:1.08; max-width:24ch; margin-inline:auto;
 }
 .hero h1 em{ font-style:italic; color:var(--gold-deep); }
 .hero p.lede{
