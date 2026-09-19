@@ -112,11 +112,20 @@ h1,h2,h3{ font-family:var(--display); font-weight:500; margin:0; color:var(--ink
 
 @media (max-width: 860px){
   .nav-group{ display:none; }
-  .nav-toggle{ display:block; }
+  .nav-toggle{ display:block; order:3; }
+  .header-inner{ flex-wrap:wrap; }
+  .brand-mark{ flex:1; align-items:center; text-align:center; }
   .header-inner.mobile-open .nav-group{
-    display:flex; position:absolute; left:0; right:0; top:100%;
-    background:var(--paper); flex-direction:column; align-items:center;
-    padding:1.5rem 0; border-bottom:1px solid var(--line); gap:1.2rem;
+    display:flex; flex-basis:100%; order:4;
+    flex-direction:column; align-items:center;
+    gap:1.2rem; padding:1.2rem 0;
+  }
+  .header-inner.mobile-open .nav-group.left{
+    border-top:1px solid var(--line); padding-bottom:0;
+  }
+  .header-inner.mobile-open .nav-group.right{
+    justify-content:center; padding-top:0;
+    border-bottom:1px solid var(--line);
   }
 }
 
