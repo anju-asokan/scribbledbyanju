@@ -243,6 +243,9 @@ section{ padding-block:clamp(3.5rem, 8vh, 6rem); }
 .contact-info dt:first-child{ margin-top:0; }
 .contact-info dd{ margin:.35rem 0 0; font-family:var(--display); font-size:1.25rem; }
 .contact-info dd .phone-number{ font-variant-numeric:lining-nums; font-feature-settings:"lnum" 1, "tnum" 1; letter-spacing:.03em; }
+.contact-info dd.social-icons{ display:flex; gap:1.1rem; align-items:center; }
+.contact-info dd.social-icons a{ color:var(--gold-deep); display:inline-flex; transition:color .3s ease, transform .3s ease; }
+.contact-info dd.social-icons a:hover{ color:var(--gold); transform:translateY(-2px); }
 
 .field{ margin-bottom:1.3rem; }
 .field label{ display:block; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:.5rem; }
@@ -259,14 +262,25 @@ section{ padding-block:clamp(3.5rem, 8vh, 6rem); }
 .footer-nav{ display:flex; flex-wrap:wrap; gap:1.8rem; }
 .footer-nav a{ font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); }
 .footer-nav a:hover{ color:var(--gold-deep); }
-.footer-social{ display:flex; gap:1.2rem; }
-.footer-social a{ font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); }
-.footer-social a:hover{ color:var(--gold-deep); }
+.footer-social{ display:flex; gap:1.2rem; align-items:center; }
+.footer-social a{ color:var(--ink-soft); display:inline-flex; transition:color .3s ease, transform .3s ease; }
+.footer-social a:hover{ color:var(--gold-deep); transform:translateY(-2px); }
 .footer-bottom{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; font-size:.74rem; color:var(--ink-soft); padding-top:1.6rem; border-top:1px solid var(--line); }
 
 /* reveal on scroll */
 .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.is-visible{ opacity:1; transform:none; }
+
+/* toast popup (form success) */
+.toast{
+  position:fixed; left:50%; bottom:2.4rem; transform:translate(-50%, 1rem);
+  background:var(--ink); color:var(--paper);
+  font-family:var(--body); font-size:.9rem; letter-spacing:.04em;
+  padding:1rem 1.8rem; border-radius:3px; z-index:200;
+  box-shadow:0 18px 40px -18px rgba(36,32,27,.5);
+  opacity:0; transition:opacity .5s ease, transform .5s ease; pointer-events:none;
+}
+.toast.is-visible{ opacity:1; transform:translate(-50%, 0); }
 
 /* page hero (interior pages) */
 .page-hero{ text-align:center; padding-block:clamp(3rem,8vh,5rem) 2rem; }
