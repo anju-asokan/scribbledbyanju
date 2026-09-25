@@ -241,6 +241,7 @@ section{ padding-block:clamp(3.5rem, 8vh, 6rem); }
 
 /* contact */
 .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,5rem); }
+.contact-grid .contact-form{ order:-1; }
 @media (max-width:800px){ .contact-grid{ grid-template-columns:1fr; } }
 .contact-info dt{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-deep); margin-top:1.6rem; }
 .contact-info dt:first-child{ margin-top:0; }
