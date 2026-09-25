@@ -386,3 +386,29 @@ section{ padding-block:clamp(3.5rem, 8vh, 6rem); }
 @media (prefers-reduced-motion:reduce){
   .auto-carousel-track{ animation:none; }
 }
+
+/* Auto-scrolling reviews carousel */
+.reviews-carousel{
+  overflow:hidden;
+  margin-top:2.4rem;
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image:linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.reviews-track{
+  display:flex;
+  gap:2.4rem;
+  width:max-content;
+  animation:reviews-scroll 45s linear infinite;
+}
+.reviews-carousel:hover .reviews-track{ animation-play-state:paused; }
+.reviews-track .t-card{
+  flex:0 0 auto;
+  width:min(360px, 80vw);
+}
+@keyframes reviews-scroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(calc(-50% - 1.2rem)); }
+}
+@media (prefers-reduced-motion:reduce){
+  .reviews-track{ animation:none; }
+}
