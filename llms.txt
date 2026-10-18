@@ -15,13 +15,13 @@ Milano, Dublin Airport and McCabe's Pharmacy.
 ## Pages
 
 - [Home](https://www.scribbledbyanju.com/): Overview of the studio, services, selected works and client reviews.
-- [About](https://www.scribbledbyanju.com/about.html): Anju's story and the studio's approach to bespoke calligraphy and engraving.
-- [Services](https://www.scribbledbyanju.com/services.html): Calligraphy, hand engraving and product painting for weddings, private clients and corporate events.
-- [Wedding Calligraphy](https://www.scribbledbyanju.com/wedding-calligraphy.html): Hand-lettered envelopes, place cards, seating charts, vow books and live wedding favour personalisation.
-- [Corporate Events & Brand Activations](https://www.scribbledbyanju.com/corporate-events.html): Live calligraphy and engraving for PR events, product launches and corporate gifting.
-- [Brand Activations](https://www.scribbledbyanju.com/brand-activations.html): Live engraving and live calligraphy for brand activations, product launches, pop-ups and retail activations — a trusted live event artist in Dublin and across Ireland.
-- [Portfolio](https://www.scribbledbyanju.com/portfolio.html): A gallery of bespoke calligraphy and hand engraving work.
-- [Contact](https://www.scribbledbyanju.com/contact.html): Enquiry form and studio contact details.
+- [About](https://www.scribbledbyanju.com/about): Anju's story and the studio's approach to bespoke calligraphy and engraving.
+- [Services](https://www.scribbledbyanju.com/services): Calligraphy, hand engraving and corporate event personalisation for weddings, private clients and corporate events.
+- [Wedding Calligraphy](https://www.scribbledbyanju.com/wedding-calligraphy): Hand-lettered envelopes, place cards, seating charts, vow books and live wedding favour personalisation.
+- [Corporate Events & Brand Activations](https://www.scribbledbyanju.com/corporate-events): Live calligraphy and engraving for PR events, product launches and corporate gifting.
+- [Brand Activations](https://www.scribbledbyanju.com/brand-activations): Live engraving and live calligraphy for brand activations, product launches, pop-ups and retail activations — a trusted live event artist in Dublin and across Ireland.
+- [Portfolio](https://www.scribbledbyanju.com/portfolio): A gallery of bespoke calligraphy and hand engraving work.
+- [Contact](https://www.scribbledbyanju.com/contact): Enquiry form and studio contact details.
 
 ## Contact
 
