@@ -160,6 +160,22 @@ section{ padding-block:clamp(3.5rem, 8vh, 6rem); }
 }
 .split .copy p{ color:var(--ink-soft); margin:1.1rem 0 1.6rem; }
 
+/* ---------- FAQ accordion ---------- */
+.faq-list{ max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:.75rem; }
+.faq-item{
+  border:1px solid var(--line); background:var(--paper); padding:1.1rem 1.4rem;
+}
+.faq-item summary{
+  cursor:pointer; list-style:none; font-family:var(--display); font-size:1.25rem;
+  color:var(--ink); display:flex; align-items:center; justify-content:space-between; gap:1rem;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{
+  content:"+"; font-family:var(--body); font-size:1.4rem; color:var(--gold); flex:none; line-height:1;
+}
+.faq-item[open] summary::after{ content:"\2212"; }
+.faq-item p{ color:var(--ink-soft); margin:.9rem 0 0; }
+
 /* placeholder image block — swap for real photography */
 .ph{
   position:relative; aspect-ratio:4/5; background:
