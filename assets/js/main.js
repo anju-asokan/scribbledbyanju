@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Duplicate testimonial cards at runtime (not in raw HTML) so the
+  // seamless auto-scroll loop works without exposing duplicate text to crawlers.
+  const reviewsTrack = document.querySelector('.reviews-track');
+  if (reviewsTrack) {
+    const originalCards = Array.from(reviewsTrack.children);
+    originalCards.forEach(card => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      reviewsTrack.appendChild(clone);
+    });
+  }
+
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {
     const io = new IntersectionObserver((entries) => {
