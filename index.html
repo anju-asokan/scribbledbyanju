@@ -36,13 +36,70 @@
   "email": "hello@scribbledbyanju.com",
   "telephone": "+353892171814",
   "priceRange": "€€€",
-  "areaServed": "IE",
+  "areaServed": [
+    { "@type": "City", "name": "Dublin" },
+    { "@type": "Country", "name": "Ireland" }
+  ],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Newcastle",
     "addressRegion": "Co. Dublin",
     "addressCountry": "IE"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.2965,
+    "longitude": -6.5305
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "6"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Jessica" },
+      "reviewBody": "Anju created a sentimental calligraphy piece as a gift for my husband. Beautifully done, from the text to the way it was packaged."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Hazel Stanley" },
+      "reviewBody": "Anju addressed the envelopes for my wedding and I cannot recommend her enough — detail-oriented, a true perfectionist."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Laura Muldoon" },
+      "reviewBody": "A fantastic job on a sentimental piece for my family, presented beautifully. Couldn't be happier with how it turned out."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Lincy KS" },
+      "reviewBody": "Absolutely in love with this hand-engraved perfume! The detailing is so beautiful and personal — perfect as a birthday gift."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Serah" },
+      "reviewBody": "I was looking for something different and that's when I approached Anju to do my son's baptism invitation. It came out very well and received many enquiries."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Anand Ashok" },
+      "reviewBody": "Beautiful and elegant calligraphy! Anju's work is so creative and professional, perfect for any occasion."
+    }
+  ],
   "sameAs": [
     "https://www.instagram.com/scribbledbyanju",
     "https://www.facebook.com/share/1Ez8Nd4Cek/",
@@ -57,6 +114,20 @@
   "@type": "WebSite",
   "name": "Scribbled by Anju",
   "url": "https://www.scribbledbyanju.com/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.scribbledbyanju.com/"
+    }
+  ]
 }
 </script>
 </head>
