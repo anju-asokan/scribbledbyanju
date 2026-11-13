@@ -196,6 +196,8 @@ section{ padding-block:clamp(3.5rem, 8vh, 6rem); }
 .ph.ph-photo{ padding:0; }
 .ph.ph-photo::before{ inset:0; z-index:1; pointer-events:none; }
 .ph.ph-photo img{ width:100%; height:100%; object-fit:cover; }
+.ph.ph-photo.ph-contain{ background:var(--ivory); }
+.ph.ph-photo.ph-contain img{ object-fit:contain; object-position:center; }
 
 /* press / brand strip */
 .press-strip{
