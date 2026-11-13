@@ -7,6 +7,3 @@
 /brand-activations  /brand-activations.html  200
 /hand-engraving     /hand-engraving.html     200
 /thank-you          /thank-you.html          200
-
-# Catch-all: serve 404 page (Workers Assets only supports 200/301/302/303/307/308)
-/*                  /404.html      200
