@@ -1,12 +1,12 @@
 /about              /about.html              200
 /services           /services.html           200
-/portfolio          /portfolio.html           200
-/contact            /contact.html             200
+/portfolio          /portfolio.html          200
+/contact            /contact.html            200
 /wedding-calligraphy /wedding-calligraphy.html 200
-/corporate-events   /corporate-events.html    200
-/brand-activations  /brand-activations.html   200
-/hand-engraving     /hand-engraving.html      200
-/thank-you          /thank-you.html           200
+/corporate-events   /corporate-events.html   200
+/brand-activations  /brand-activations.html  200
+/hand-engraving     /hand-engraving.html     200
+/thank-you          /thank-you.html          200
 
-# Catch-all: serve 404 page with a true 404 status for any unmatched route
-/*                  /404.html      404
+# Catch-all: serve 404 page (Workers Assets only supports 200/301/302/303/307/308)
+/*                  /404.html      200
