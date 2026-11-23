@@ -52,11 +52,11 @@ window.SBA_SEARCH_INDEX = [
     category: 'wedding'
   },
   {
-    title: 'Best Calligraphy in Dublin',
+    title: 'Best Hand Engraving Artist for Your Event',
     url: '/best-calligraphy-in-dublin',
-    description: 'Why Scribbled by Anju is Dublin\'s go-to for luxury calligraphy.',
-    keywords: 'best calligraphy dublin calligrapher ireland top rated live calligrapher calligrapher for event event calligrapher calligrapher for hire',
-    category: 'general'
+    description: 'Why Scribbled by Anju is Dublin\'s go-to live hand engraving artist for events.',
+    keywords: 'best hand engraving artist event dublin engraver ireland top rated live engraver engraver for event event engraver engraver for hire live engraving perfume bottle glassware keepsake calligrapher for event event calligrapher',
+    category: 'engraving'
   },
   {
     title: 'Portfolio',
