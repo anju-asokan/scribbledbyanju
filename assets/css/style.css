@@ -129,6 +129,60 @@ h1,h2,h3{ font-family:var(--display); font-weight:500; margin:0; color:var(--ink
   }
 }
 
+/* ---------- Search ---------- */
+.search-toggle{
+  display:flex; align-items:center; justify-content:center;
+  width:34px; height:34px; background:none; border:none; cursor:pointer;
+  color:var(--ink-soft); transition:color .25s ease; padding:0;
+}
+.search-toggle:hover{ color:var(--gold-deep); }
+.search-toggle svg{ width:18px; height:18px; display:block; }
+
+.search-overlay{
+  position:fixed; inset:0; z-index:100;
+  background:rgba(36,32,27,.55); backdrop-filter:blur(2px);
+  display:flex; align-items:flex-start; justify-content:center;
+  padding:clamp(1.2rem, 8vh, 6rem) 1rem 1rem;
+  opacity:0; visibility:hidden; transition:opacity .25s ease;
+}
+.search-overlay.is-open{ opacity:1; visibility:visible; }
+.search-panel{
+  background:var(--paper); width:100%; max-width:620px;
+  border:1px solid var(--line); border-radius:4px;
+  padding:1.5rem; max-height:76vh; display:flex; flex-direction:column;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  transform:translateY(-12px); transition:transform .25s ease;
+}
+.search-overlay.is-open .search-panel{ transform:translateY(0); }
+.search-field{
+  display:flex; align-items:center; gap:.7rem;
+  border-bottom:1px solid var(--line); padding-bottom:.9rem; margin-bottom:1rem;
+}
+.search-field svg{ width:18px; height:18px; color:var(--ink-soft); flex:none; }
+.search-field input{
+  flex:1; border:none; background:none; outline:none;
+  font-family:var(--body); font-size:1.05rem; color:var(--ink);
+}
+.search-field input::placeholder{ color:var(--ink-soft); opacity:.7; }
+.search-close{
+  background:none; border:none; cursor:pointer; color:var(--ink-soft);
+  font-size:1.3rem; line-height:1; padding:.2rem .3rem;
+}
+.search-close:hover{ color:var(--ink); }
+.search-results{ overflow-y:auto; display:flex; flex-direction:column; gap:.3rem; }
+.search-result{
+  display:block; padding:.75rem .6rem; border-radius:3px;
+  transition:background .2s ease;
+}
+.search-result:hover, .search-result.is-active{ background:var(--ivory); }
+.search-result .r-title{
+  font-family:var(--display); font-size:1.12rem; color:var(--ink); display:block;
+}
+.search-result .r-desc{
+  font-size:.86rem; color:var(--ink-soft); margin-top:.15rem; display:block;
+}
+.search-empty{ color:var(--ink-soft); font-size:.9rem; padding:.6rem; }
+
 /* ---------- Hero ---------- */
 .hero{
   position:relative; padding-block:clamp(2rem,6vh,4rem) clamp(3.5rem,10vh,7rem);
